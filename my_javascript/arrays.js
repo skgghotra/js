@@ -1,4 +1,8 @@
-let marks=[45,56,78,98,53,23];                           //arrays are mutable
+//arrays are used to store multiple values in a single variable. 
+// An array is a special variable, which can hold more than one value at a time. 
+// It is a data structure that can hold a fixed number of values of the same type. 
+// Each item in an array has a unique index, starting from 0 for the first item, 1 for the second item, and so on.
+let marks=[45,56,78,98,53,23];            
 console.log(marks);
 console.log("length of marks:",marks.length);     //property
 
@@ -40,12 +44,12 @@ console.log(veggies);
 console.log("pop method");
 let fruits_item=["apple","mango","litchi","strawberry","blueberry"];
 console.log(fruits_item);
-fruits_item.pop();                    //Removes the last element from an array and returns it. If the array is empty, undefined is returned and the array is not modified.
+fruits_item.pop();             //Removes the last element from an array and returns it. If the array is empty, undefined is returned and the array is not modified.
 console.log(fruits_item);
 
 console.log("convert array into string");
 console.log(veggies);
-console.log(veggies.toString());       //Returns a string representation of an array.
+console.log(veggies.toString());       //to string method is used to convert an array into a string. It returns a string representing the specified array and its elements. The elements are converted to strings and are separated by commas in the resulting string.
 
 console.log("joint multiple arrays");
 let bold_colors=["red","purple","blue","orange"];
