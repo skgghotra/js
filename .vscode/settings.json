@@ -1,4 +1,5 @@
 {
     "terminal.integrated.initialHintCopilotCli": true,
-    "github.copilot.chat.copilotMemory.enabled": true
+    "github.copilot.chat.copilotMemory.enabled": true,
+    "liveServer.settings.port": 5501
 }

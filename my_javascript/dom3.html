@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color:lightyellow ; color:purple; font-size:20px">
+    <h2>create, edit and remove element</h2>
+    <ul class="language">
+        <li>JavaScript</li>
+    </ul>
+    <script>
+        //create a new element
+    function addOptionLanguage(langName){
+    const li= document.createElement('li');
+    li.appendChild(document.createTextNode(langName));  
+    document.querySelector('.language').appendChild(li);
+}   
+addOptionLanguage('Python');
+addOptionLanguage('Java');
+addOptionLanguage('C++');
+
+//edit an element
+const secondLanguage=document.querySelector("li:nth-child(2)");
+//secondLanguage.innerHTML='Ruby';
+//secondLanguage.outerHTML='<li>Ruby</li>';
+const newLi=document.createElement('li');
+newLi.textContent='Ruby';
+secondLanguage.replaceWith(newLi);
+
+//remove an element
+const thirdLanguage=document.querySelector("li:nth-child(3)");
+thirdLanguage.remove();
+</script>
+</body>
+</html>
